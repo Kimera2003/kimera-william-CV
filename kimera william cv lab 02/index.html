@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kimera William — CV</title>
+  <meta name="description" content="Professional CV website for Kimera William, Computer & IT student, manager, and innovator."/>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent1:#7C3AED; /* purple */
+      --accent2:#06B6D4; /* teal */
+      --muted:#9CA3AF;
+      --text:#E6EEF6;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, Arial, sans-serif;
+      background: radial-gradient(800px 400px at 10% 20%, rgba(124,58,237,0.12), transparent),
+                  radial-gradient(600px 300px at 90% 80%, rgba(6,182,212,0.08), transparent),
+                  var(--bg);
+      color:var(--text);
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      width:100%;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:30px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+    }
+    .side{position:sticky;top:40px;height:fit-content}
+    .avatar{
+      width:100%;height:220px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;font-size:28px;color:white;
+    }
+    .name{font-size:20px;font-weight:800;margin:14px 0 4px}
+    .sub{color:var(--muted);font-size:13px;margin-bottom:12px}
+    .contact-item{margin-bottom:8px;font-size:14px}
+    .section-title{margin-top:18px;font-size:13px;color:var(--accent2);letter-spacing:0.8px;font-weight:700}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:10px;font-size:13px}
+    .summary{margin-top:14px;color:var(--muted);line-height:1.55}
+    .job{margin-bottom:14px}
+    .job h4{margin:0;font-size:15px}
+    .job .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    .bullets{margin:6px 0 12px 18px;color:var(--muted);line-height:1.5}
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){
+      .wrap{grid-template-columns:1fr}
+      .side{position:relative;top:0}
+      .avatar{height:180px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- LEFT SIDE -->
+    <aside class="card side">
+      <div class="avatar">KW</div>
+      <div class="name">Kimera William</div>
+      <div class="sub">Computer & IT Student • Manager • Innovator</div>
+
+      <div class="contact-item"><strong>Email:</strong> williamarimik3@gmail.com</div>
+      <div class="contact-item"><strong>Phone:</strong> +256 746 816 688</div>
+      <div class="contact-item"><strong>Location:</strong> Entebbe, Uganda</div>
+      <div class="contact-item"><strong>LinkedIn:</strong> Kimera William</div>
+
+      <div class="section-title">Core Skills</div>
+      <div class="skills">
+        <div class="skill">Python</div><div class="skill">Java</div><div class="skill">C / C++</div>
+        <div class="skill">HTML/CSS</div><div class="skill">SQL</div><div class="skill">Data Analytics</div>
+        <div class="skill">IoT & Automation</div><div class="skill">Project Management</div>
+      </div>
+
+      <div class="section-title">Personal Strengths</div>
+      <div style="margin-top:10px;color:var(--muted);font-size:14px;line-height:1.5">
+        Hardworking • Determined • Works well under pressure • Leadership • Adaptability • Integrity • Community-minded
+      </div>
+    </aside>
+
+    <!-- RIGHT SIDE -->
+    <main class="card">
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Ambitious and highly motivated Computer and Information Technology student with a strong foundation in programming,
+        coding, and data analytics. A natural leader and effective communicator, passionate about using technology to drive
+        modernization and sustainable development.
+      </p>
+
+      <h3 class="section-title">Education</h3>
+      <ul style="color:var(--muted)">
+        <li>Hana International School — UACE</li>
+        <li>Gombe High School — UCE</li>
+        <li>Gombe Junior / Gateway Primary — PLE</li>
+      </ul>
+
+      <h3 class="section-title">Leadership & Community Service</h3>
+      <ul style="color:var(--muted)">
+        <li>Assistant Head Boy — Hana International School</li>
+        <li>Estate & Refectory Prefect — Gombe High School</li>
+        <li>Interact Club: Treasurer (Gombe), Vice President (Viva College)</li>
+        <li>Rotaract Club of Kyadondo — charity outreach for orphans & needy families</li>
+      </ul>
+
+      <h3 class="section-title">Experience & Training</h3>
+      <div class="job">
+        <h4>Manager — Fotogenix Group of Companies</h4>
+        <ul class="bullets">
+          <li>Lead and coordinate teams in managerial roles, ensuring smooth operations and strategic decision-making.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h4>Intern — Airserv International (Entebbe)</h4>
+        <ul class="bullets">
+          <li>Gained exposure to aviation operations and business opportunities while pursuing a business course.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h4>Intern — Task Masters Limited</h4>
+        <ul class="bullets">
+          <li>Applied data analytics skills to practical projects and strengthened technical problem-solving.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h4>Hydro Gateway System — UIRI</h4>
+        <ul class="bullets">
+          <li>Automated flood-alert and water-flow control project; received formal letter of recommendation.</li>
+        </ul>
+      </div>
+
+      <h3 class="section-title">References</h3>
+      <ul style="color:var(--muted)">
+        <li>Thomas Kiggundu — Managing Director, Fotogenix Ltd & Civil Aviation Board Member | +256 752 777 422</li>
+        <li>Jennifer Nakimwero — Human Resource, Airserv Limited | +256 772 589 594</li>
+        <li>Micheal Lukwago — Telecommunications Specialist, American Embassy | +256 772 221 512</li>
+      </ul>
+
+      <footer>© 2025 Kimera William — CV Website</footer>
+    </main>
+  </div>
+</body>
+</html>
